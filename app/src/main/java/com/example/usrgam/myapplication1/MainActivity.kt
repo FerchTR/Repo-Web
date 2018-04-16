@@ -3,15 +3,20 @@ package com.example.usrgam.myapplication1
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        texto_Central.text="Adios"
+        var valorTextoCentral:CharSequence = texto_Central.text
+        Log.i(tag "clase",msg:"el texto que se muestra es $(texto_Central.text)")
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
